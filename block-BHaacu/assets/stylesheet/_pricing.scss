@@ -1,0 +1,27 @@
+.pricing-heading {
+  @extend .about-heading;
+}
+.pricing-plans {
+  background: $secondary;
+}
+.plan {
+  border: 1px solid #c8cbcd;
+  background: white;
+  padding: 2rem 2rem;
+  line-height: 2;
+  margin-top: 5rem;
+  ul {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  span {
+    font-size: 1.2rem;
+  }
+}
+.faqs {
+  margin-top: 5rem;
+}
+.question {
+  @extend .plan;
+  margin: 1rem 0;
+}
