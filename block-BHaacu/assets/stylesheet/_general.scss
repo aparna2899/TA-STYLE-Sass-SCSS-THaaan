@@ -1,0 +1,193 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: $font;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-30 {
+  flex: 0 1 30%;
+}
+.flex-45 {
+  flex: 0 1 45%;
+}
+.flex-48 {
+  flex: 0 1 48%;
+}
+.flex-80 {
+  flex: 0 1 80%;
+}
+.flex-55 {
+  flex: 0 1 55%;
+}
+.flex-20 {
+  flex: 0 1 20%;
+}
+.flex-23 {
+  flex: 0 1 23%;
+}
+.flex-start {
+  align-self: flex-start;
+}
+.width-full {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+p {
+  color: #939494e8;
+}
+.center {
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+.padding {
+  padding: 5% 0;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+h1,
+h2 {
+  font-weight: 800;
+}
+%btn {
+  padding: 0.5rem 1.3rem;
+  border-radius: 2rem;
+  display: inline-block;
+}
+.btn-primary {
+  @extend %btn;
+  background-color: $primary;
+  color: white;
+}
+.btn-secondary {
+  @extend %btn;
+  background-color: white;
+  color: $primary;
+  border: 1px solid $primary;
+}
+.btn-tertiary {
+  @extend %btn;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+#toggle {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .flex-100 {
+    flex: 0 1 100%;
+  }
+  .wrap {
+    flex-wrap: wrap;
+  }
+  .sm-center {
+    text-align: center;
+  }
+  .header-primary {
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+  }
+  .social-media {
+    margin-top: 1rem;
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 5rem;
+    height: 5rem;
+  }
+  #toggle:checked ~ .menu {
+    display: inline-block;
+  }
+  .bars {
+    font-size: 2.3rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    z-index: 5;
+    display: inline-block;
+  }
+  .logo {
+    position: absolute;
+    top: 1.2rem;
+    left: 3rem;
+    z-index: 5;
+  }
+  .menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 6rem;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(249, 35, 76, 0.95);
+    z-index: 4;
+    padding-top: 10rem;
+    text-align: center;
+    li {
+      padding-bottom: 2rem;
+      font-size: 2rem;
+    }
+  }
+  .hero {
+    padding-top: 12rem;
+  }
+  .margin {
+    margin: 2rem 0.5rem;
+  }
+  .client-icons {
+    justify-content: center;
+  }
+  .sm-flex-start {
+    justify-content: flex-start;
+  }
+  .about-intro {
+    padding-top: 6%;
+  }
+  .service-heading {
+    h2 {
+      padding-top: 12rem;
+    }
+  }
+}

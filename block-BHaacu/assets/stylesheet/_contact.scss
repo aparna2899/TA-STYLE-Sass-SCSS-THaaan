@@ -1,0 +1,45 @@
+.contact-heading {
+  @extend .about-heading;
+}
+.contact-details {
+  p {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.contact-icons {
+  height: 6.5rem;
+  width: 6.5rem;
+  background: $secondary;
+  font-size: 2.5rem;
+  margin: {
+    top: 4rem;
+    left: auto;
+    right: auto;
+    bottom: 2rem;
+  }
+  color: $primary;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 6.5rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  border: 1px solid #c8cbcd;
+  border-radius: 0.2rem;
+}
+textarea {
+  font-family: $font;
+  resize: none;
+}
+iframe,
+form {
+  margin-top: 5rem;
+}
+form a {
+  margin-top: 1rem;
+}
