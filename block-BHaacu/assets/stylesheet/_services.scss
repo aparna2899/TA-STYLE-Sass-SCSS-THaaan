@@ -1,0 +1,48 @@
+.service-heading {
+  @extend .about-heading;
+}
+.service-intro {
+  @extend .about-intro;
+}
+.service-product {
+  p {
+    color: black;
+    margin-top: 0.5rem;
+  }
+}
+.products {
+  background: $secondary;
+  hr {
+    margin-top: 4rem;
+    border: none;
+    border-top: 1px solid #dddfe1;
+  }
+}
+.best-deals {
+  @extend .request;
+  p {
+    display: inline-block;
+  }
+  strong {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  span {
+    margin: 0 1rem;
+  }
+}
+.award-heading {
+  p {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    line-height: 2;
+  }
+  margin-bottom: 10%;
+}
+.award {
+  p {
+    line-height: 2;
+    margin-top: 1rem;
+  }
+}

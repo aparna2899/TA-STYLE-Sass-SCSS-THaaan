@@ -1,0 +1,160 @@
+header nav {
+  padding: 0 12%;
+}
+.header-primary {
+  background-color: $primary;
+  font-size: 0.8rem;
+  padding: {
+    top: 0.5rem;
+    bottom: 0.5rem;
+  }
+  a,
+  i {
+    color: white;
+  }
+  a {
+    margin: 0 0.5rem;
+  }
+  i {
+    margin-left: 1rem;
+  }
+}
+.navbar {
+  background-color: $secondary;
+
+  strong {
+    color: $primary;
+  }
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.menu {
+  a {
+    color: black;
+    margin: 0 1rem;
+  }
+  li {
+    padding: 1.5rem 0;
+    font-weight: 500;
+  }
+  li:hover {
+    background-color: $primary;
+    a {
+      color: white;
+    }
+  }
+}
+.blog,
+.page {
+  position: relative;
+  i {
+    margin-left: 0.5rem;
+  }
+}
+.blog:hover .blog-dropdown,
+.page:hover .page-dropdown {
+  display: block;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  a {
+    color: black;
+    margin: 0;
+    padding-left: 0.5rem;
+  }
+  a:hover {
+    background: $primary;
+    color: white;
+  }
+}
+.blog-dropdown {
+  display: none;
+  height: 5rem;
+  width: 10rem;
+  background: $secondary;
+  position: absolute;
+  top: 4.5rem;
+  a {
+    display: block;
+    padding: 0.5rem 0;
+    font-weight: 600;
+  }
+}
+.page-dropdown {
+  @extend .blog-dropdown;
+  height: 7.5rem;
+}
+.hero {
+  height: 70vh;
+  background: url(../media/banner-1.jpg) no-repeat center center;
+  background-size: cover;
+  h1 {
+    padding-top: 12%;
+    width: 50%;
+  }
+  strong {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+    display: block;
+  }
+}
+.services {
+  margin-top: 5%;
+  img {
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
+}
+.service {
+  border: 2px solid #dfe0e0e8;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+  p {
+    margin: {
+      top: 1rem;
+      bottom: 2rem;
+    }
+  }
+}
+.solutions {
+  background-color: $secondary;
+  p {
+    width: 70%;
+    margin: 2rem auto;
+    line-height: 2;
+  }
+}
+.request {
+  background-color: $primary;
+  color: white;
+  padding: 2% 0;
+  p {
+    color: white;
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+}
+.clients {
+  background-color: $secondary;
+  img {
+    width: 8rem;
+    filter: grayscale(100%);
+    margin-top: 2rem;
+  }
+}
+footer {
+  background-color: $tertiary;
+  color: white;
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+  a {
+    color: white;
+    line-height: 2.2;
+  }
+  i {
+    margin-right: 1rem;
+  }
+}
